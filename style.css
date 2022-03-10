@@ -351,6 +351,7 @@ p {
         justify-content: center;
         align-items: center;
         margin-left: 0rem !important;
+        margin-bottom: 1rem !important;
     }
     .main .cards {
         width: 250px;
@@ -422,7 +423,5 @@ p {
     table tr td:first-child {
         display: none;
     }
-    .main-table {
-        margin-bottom: 1rem;
-    }
+   
 }
