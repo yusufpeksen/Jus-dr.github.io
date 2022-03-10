@@ -422,4 +422,7 @@ p {
     table tr td:first-child {
         display: none;
     }
+    .main-table {
+        margin-bottom: 1rem;
+    }
 }
