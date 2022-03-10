@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root {
+    --success : #28a745;
+    --warning : #ffc107;
+    --danger : #dc3545;
+}
+.success {
+    color: var(--success);
+}
+.warning {
+    color: var(--warning);
+}
+.danger {
+    color: var(--danger);
+}
+.container {
+    display: flex;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(218, 216, 214);
+}
+aside {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    border-right: 1px solid #ddd;
+    
+}
+.close-btn {
+    display: none !important;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-span {
+    margin-top: 2rem;
+    font-size: 25px;
+    color: rgb(90, 120, 122);
+    font-weight: 700;
+}
+.logo-text {
+    color: black;
+}
+.buttons {
+    height: 100%;
+}
+.buttons ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    gap: 2.2rem;
+}
+.buttons ul li {
+    cursor: pointer;
+    transition: padding-left 300ms ease;
+    padding-bottom: 0.5rem;
+}
+.buttons ul li:hover {
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+}
+.buttons ul li i {
+    margin-left: 1rem;
+}
+.buttons ul li span {
+    margin-left: 1.5rem;
+}
+.message-count {
+    font-size: 12px;
+    padding: 0.4rem 0.6rem;
+    background-color: red;
+    border-radius: 12px;
+    margin-left: 0.7rem !important;
+}
+section {
+    width: 100%;
+}
+nav {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+.bars-span {
+    margin-left: 1.5rem; 
+    font-size: 1.5rem; 
+    cursor: pointer;
+    display: none;
+}
+section nav .left-nav {
+    margin-left: 2rem;
+}
+section nav .left-nav input {
+    border: 0;
+    border-radius: 4px;
+}
+section nav .left-nav h1 {
+    text-align: center;
+}
+section nav .right-nav {
+    margin-right: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+section nav .right-nav .right-nav-text {
+    text-align: right;
+}
+section nav .right-nav span img {
+    width: 3.5rem;
+}
+
+.main {
+    margin-top: 2.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.main .cards{
+    background-color: white;
+    width: 225px;
+    height: 10rem;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.main .cards:hover {
+    box-shadow: none;
+}
+.main .cards .span-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main .cards .span-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    
+}
+.main .cards .span-icon i {
+    border-radius: 50%;
+    background-color: rgb(188, 157, 212);
+    padding: 0.7rem;
+}
+.main .cards .span-icon .first {
+    background-color: rgb(209, 132, 132);
+}
+.main .cards .span-icon .third {
+    background-color: rgb(157, 236, 157);
+}
+.main .cards .span-small-text {
+    position: absolute;
+    bottom: 4px;
+    left: 10px;
+    font-size: 10px;
+    color: rgb(156, 154, 154);
+    font-weight: 500;
+    
+}
+
+section .main-table {
+    background-color: white;
+    width: 95%;
+    height: 23rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+
+    
+}
+section .main-table table {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+section .main-table table td {
+    text-align: center;
+}
+section .main-table table tr {
+    border-bottom: 1px solid #ddd;
+}
+section .main-table table tr:hover {
+    background-color: rgba(221, 221, 221, 0.685);
+}
+section .main-table table tr:first-child {
+    font-weight: bold;
+}
+
+
+.details-button {
+    cursor: pointer;
+    color: rgb(167, 113, 131);
+}
+
+p {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 1200px){
+    body {
+        width: 100%;
+    }
+    aside {
+        width: 55px;
+    }
+    .buttons ul li span {
+        display: none;
+    }
+    .logo-span {
+        font-size: 0.8rem;
+    }
+    .buttons ul li:hover {
+        padding-left: 0rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid black;
+    }
+    .main {
+        gap: 0rem;
+    }
+    .main .cards {
+        width: 175px;
+    }
+    section .main-table {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .main {
+        display: grid;
+        row-gap: 1rem;
+        grid-template-columns: repeat(2,250px);
+    }
+    .main .cards {
+        width: 250px;
+    }
+    aside {
+        position: fixed;
+        z-index: 1;
+        background-color: white;
+        width: 0;
+        display: none;
+        transition: 0.5s !important;
+    }
+    .buttons ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        gap: 0.7rem;
+        width: 200px;
+        z-index: 100;
+  
+    }
+    .buttons ul li {
+        display: flex;
+        cursor: pointer;
+        transition: padding-left 300ms ease;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        z-index: 101;
+    }
+    .buttons ul li:hover {
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid black;
+    }
+    .buttons ul li i {
+        margin-left: 1rem;
+    }
+    .buttons ul li span {
+        margin-left: 1.5rem
+    }
+
+
+    .buttons ul li span {
+        display: flex;
+    }
+    .message-count {
+        font-size: 12px;
+        width: 33px;
+        padding: 0.4rem 0.6rem !important;
+        background-color: red;
+        border-radius: 12px;
+        margin-left: 0.7rem !important;
+    }
+    .close-btn {
+        display: block !important;
+        position: absolute;
+        right: 8px;
+        top: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .bars-span {
+        margin-left: 1.5rem; 
+        font-size: 1.5rem; 
+        cursor: pointer;
+        display: block;
+    }
+    table tr td:first-child {
+        display: none;
+    }
+
+}
+@media screen and (max-width : 415px) {
+    body {
+        height: 100vh;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+    .main-table {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0rem !important;
+    }
+    .main .cards {
+        width: 250px;
+    }
+    aside {
+        position: fixed;
+        z-index: 1;
+        background-color: white;
+        width: 0;
+        display: none;
+        transition: 0.5s !important;
+    }
+    .buttons ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        gap: 0.7rem;
+        width: 200px;
+        z-index: 100;
+  
+    }
+    .buttons ul li {
+        display: flex;
+        cursor: pointer;
+        transition: padding-left 300ms ease;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        z-index: 101;
+    }
+    .buttons ul li:hover {
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid black;
+    }
+    .buttons ul li i {
+        margin-left: 1rem;
+    }
+    .buttons ul li span {
+        margin-left: 1.5rem
+    }
+
+
+    .buttons ul li span {
+        display: flex;
+    }
+    .message-count {
+        font-size: 12px;
+        width: 33px;
+        padding: 0.4rem 0.6rem !important;
+        background-color: red;
+        border-radius: 12px;
+        margin-left: 0.7rem !important;
+    }
+    .close-btn {
+        display: block !important;
+        position: absolute;
+        right: 8px;
+        top: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .bars-span {
+        margin-left: 1.5rem; 
+        font-size: 1.5rem; 
+        cursor: pointer;
+        display: block;
+    }
+    table tr td:first-child {
+        display: none;
+    }
+}
