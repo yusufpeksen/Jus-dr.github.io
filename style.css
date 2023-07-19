@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+#main {
+  background: rgb(133, 183, 130);
+  background: linear-gradient(
+    90deg,
+    rgba(133, 183, 130, 1) 0%,
+    rgba(9, 121, 108, 1) 35%,
+    rgba(8, 108, 96, 1) 100%
+  );
+  width: 100%;
+  min-height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profil-picture {
+    border-radius: 50%;
+}
+.linkedin-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.zoom-img {
+  transition: all 0.3s !important;
+}
+.zoom-img:hover {
+  transform: scale(1.05) !important;
+}
+.card {
+  min-height: 400px;
+}
